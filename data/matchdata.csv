@@ -1,0 +1,103 @@
+matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards,rcards,fouls
+1,1,14/06/2024 20:00,Fußball Arena München,Group A,hometeam,Germany,0,0,0,0,0
+1,1,14/06/2024 20:00,Fußball Arena München,Group A,awayteam,Scotland,0,0,0,0,0
+2,1,15/06/2024 14:00,Stadion Köln,Group A,hometeam,Hungary,0,0,0,0,0
+2,1,15/06/2024 14:00,Stadion Köln,Group A,awayteam,Switzerland,0,0,0,0,0
+3,1,15/06/2024 17:00,Olympiastadion,Group B,hometeam,Spain,0,0,0,0,0
+3,1,15/06/2024 17:00,Olympiastadion,Group B,awayteam,Croatia,0,0,0,0,0
+4,1,15/06/2024 20:00,BVB Stadion Dortmund,Group B,hometeam,Italy,0,0,0,0,0
+4,1,15/06/2024 20:00,BVB Stadion Dortmund,Group B,awayteam,Albania,0,0,0,0,0
+5,1,16/06/2024 14:00,Volksparkstadion,Group D,hometeam,Poland,0,0,0,0,0
+5,1,16/06/2024 14:00,Volksparkstadion,Group D,awayteam,Netherlands,0,0,0,0,0
+6,1,16/06/2024 17:00,Arena Stuttgart,Group C,hometeam,Slovenia,0,0,0,0,0
+6,1,16/06/2024 17:00,Arena Stuttgart,Group C,awayteam,Denmark,0,0,0,0,0
+7,1,16/06/2024 20:00,Arena AufSchalke,Group C,hometeam,Serbia,0,0,0,0,0
+7,1,16/06/2024 20:00,Arena AufSchalke,Group C,awayteam,England,0,0,0,0,0
+8,1,17/06/2024 14:00,Fußball Arena München,Group E,hometeam,Romania,0,0,0,0,0
+8,1,17/06/2024 14:00,Fußball Arena München,Group E,awayteam,Ukraine,0,0,0,0,0
+9,1,17/06/2024 17:00,Frankfurt Stadion,Group E,hometeam,Belgium,0,0,0,0,0
+9,1,17/06/2024 17:00,Frankfurt Stadion,Group E,awayteam,Slovakia,0,0,0,0,0
+10,1,17/06/2024 20:00,Düsseldorf Arena,Group D,hometeam,Austria,0,0,0,0,0
+10,1,17/06/2024 20:00,Düsseldorf Arena,Group D,awayteam,France,0,0,0,0,0
+11,1,18/06/2024 17:00,BVB Stadion Dortmund,Group F,hometeam,Türkiye,0,0,0,0,0
+11,1,18/06/2024 17:00,BVB Stadion Dortmund,Group F,awayteam,Georgia,0,0,0,0,0
+12,1,18/06/2024 20:00,RB Arena,Group F,hometeam,Portugal,0,0,0,0,0
+12,1,18/06/2024 20:00,RB Arena,Group F,awayteam,Czechia,0,0,0,0,0
+13,2,19/06/2024 14:00,Volksparkstadion,Group B,hometeam,Croatia,0,0,0,0,0
+13,2,19/06/2024 14:00,Volksparkstadion,Group B,awayteam,Albania,0,0,0,0,0
+14,2,19/06/2024 17:00,Arena Stuttgart,Group A,hometeam,Germany,0,0,0,0,0
+14,2,19/06/2024 17:00,Arena Stuttgart,Group A,awayteam,Hungary,0,0,0,0,0
+15,2,19/06/2024 20:00,Stadion Köln,Group A,hometeam,Scotland,0,0,0,0,0
+15,2,19/06/2024 20:00,Stadion Köln,Group A,awayteam,Switzerland,0,0,0,0,0
+16,2,20/06/2024 14:00,Fußball Arena München,Group C,hometeam,Slovenia,0,0,0,0,0
+16,2,20/06/2024 14:00,Fußball Arena München,Group C,awayteam,Serbia,0,0,0,0,0
+17,2,20/06/2024 17:00,Frankfurt Stadion,Group C,hometeam,Denmark,0,0,0,0,0
+17,2,20/06/2024 17:00,Frankfurt Stadion,Group C,awayteam,England,0,0,0,0,0
+18,2,20/06/2024 20:00,Arena AufSchalke,Group B,hometeam,Spain,0,0,0,0,0
+18,2,20/06/2024 20:00,Arena AufSchalke,Group B,awayteam,Italy,0,0,0,0,0
+19,2,21/06/2024 14:00,Düsseldorf Arena,Group E,hometeam,Slovakia,0,0,0,0,0
+19,2,21/06/2024 14:00,Düsseldorf Arena,Group E,awayteam,Ukraine,0,0,0,0,0
+20,2,21/06/2024 17:00,Olympiastadion,Group D,hometeam,Poland,0,0,0,0,0
+20,2,21/06/2024 17:00,Olympiastadion,Group D,awayteam,Austria,0,0,0,0,0
+21,2,21/06/2024 20:00,RB Arena,Group D,hometeam,Netherlands,0,0,0,0,0
+21,2,21/06/2024 20:00,RB Arena,Group D,awayteam,France,0,0,0,0,0
+22,2,22/06/2024 14:00,Volksparkstadion,Group F,hometeam,Georgia,0,0,0,0,0
+22,2,22/06/2024 14:00,Volksparkstadion,Group F,awayteam,Czechia,0,0,0,0,0
+23,2,22/06/2024 17:00,BVB Stadion Dortmund,Group F,hometeam,Türkiye,0,0,0,0,0
+23,2,22/06/2024 17:00,BVB Stadion Dortmund,Group F,awayteam,Portugal,0,0,0,0,0
+24,2,22/06/2024 20:00,Stadion Köln,Group E,hometeam,Belgium,0,0,0,0,0
+24,2,22/06/2024 20:00,Stadion Köln,Group E,awayteam,Romania,0,0,0,0,0
+25,3,23/06/2024 20:00,Frankfurt Stadion,Group A,hometeam,Switzerland,0,0,0,0,0
+25,3,23/06/2024 20:00,Frankfurt Stadion,Group A,awayteam,Germany,0,0,0,0,0
+26,3,23/06/2024 20:00,Arena Stuttgart,Group A,hometeam,Scotland,0,0,0,0,0
+26,3,23/06/2024 20:00,Arena Stuttgart,Group A,awayteam,Hungary,0,0,0,0,0
+27,3,24/06/2024 20:00,Düsseldorf Arena,Group B,hometeam,Albania,0,0,0,0,0
+27,3,24/06/2024 20:00,Düsseldorf Arena,Group B,awayteam,Spain,0,0,0,0,0
+28,3,24/06/2024 20:00,RB Arena,Group B,hometeam,Croatia,0,0,0,0,0
+28,3,24/06/2024 20:00,RB Arena,Group B,awayteam,Italy,0,0,0,0,0
+29,3,25/06/2024 17:00,Olympiastadion,Group D,hometeam,Netherlands,0,0,0,0,0
+29,3,25/06/2024 17:00,Olympiastadion,Group D,awayteam,Austria,0,0,0,0,0
+30,3,25/06/2024 17:00,BVB Stadion Dortmund,Group D,hometeam,France,0,0,0,0,0
+30,3,25/06/2024 17:00,BVB Stadion Dortmund,Group D,awayteam,Poland,0,0,0,0,0
+31,3,25/06/2024 20:00,Stadion Köln,Group C,hometeam,England,0,0,0,0,0
+31,3,25/06/2024 20:00,Stadion Köln,Group C,awayteam,Slovenia,0,0,0,0,0
+32,3,25/06/2024 20:00,Fußball Arena München,Group C,hometeam,Denmark,0,0,0,0,0
+32,3,25/06/2024 20:00,Fußball Arena München,Group C,awayteam,Serbia,0,0,0,0,0
+33,3,26/06/2024 17:00,Frankfurt Stadion,Group E,hometeam,Slovakia,0,0,0,0,0
+33,3,26/06/2024 17:00,Frankfurt Stadion,Group E,awayteam,Romania,0,0,0,0,0
+34,3,26/06/2024 17:00,Arena Stuttgart,Group E,hometeam,Ukraine,0,0,0,0,0
+34,3,26/06/2024 17:00,Arena Stuttgart,Group E,awayteam,Belgium,0,0,0,0,0
+35,3,26/06/2024 20:00,Arena AufSchalke,Group F,hometeam,Georgia,0,0,0,0,0
+35,3,26/06/2024 20:00,Arena AufSchalke,Group F,awayteam,Portugal,0,0,0,0,0
+36,3,26/06/2024 20:00,Volksparkstadion,Group F,hometeam,Czechia,0,0,0,0,0
+36,3,26/06/2024 20:00,Volksparkstadion,Group F,awayteam,Türkiye,0,0,0,0,0
+37,Round of 16,29/06/2024 17:00,Olympiastadion,NA,hometeam,2A,0,0,0,0,0
+37,Round of 16,29/06/2024 17:00,Olympiastadion,NA,awayteam,2B,0,0,0,0,0
+38,Round of 16,29/06/2024 20:00,BVB Stadion Dortmund,NA,hometeam,1A,0,0,0,0,0
+38,Round of 16,29/06/2024 20:00,BVB Stadion Dortmund,NA,awayteam,2C,0,0,0,0,0
+39,Round of 16,30/06/2024 17:00,Arena AufSchalke,NA,hometeam,1C,0,0,0,0,0
+39,Round of 16,30/06/2024 17:00,Arena AufSchalke,NA,awayteam,3D/E/F,0,0,0,0,0
+40,Round of 16,30/06/2024 20:00,Stadion Köln,NA,hometeam,1B,0,0,0,0,0
+40,Round of 16,30/06/2024 20:00,Stadion Köln,NA,awayteam,3A/D/E/F,0,0,0,0,0
+41,Round of 16,01/07/2024 17:00,Düsseldorf Arena,NA,hometeam,2D,0,0,0,0,0
+41,Round of 16,01/07/2024 17:00,Düsseldorf Arena,NA,awayteam,2E,0,0,0,0,0
+42,Round of 16,01/07/2024 20:00,Frankfurt Stadion,NA,hometeam,1F,0,0,0,0,0
+42,Round of 16,01/07/2024 20:00,Frankfurt Stadion,NA,awayteam,3A/B/C,0,0,0,0,0
+43,Round of 16,02/07/2024 17:00,Fußball Arena München,NA,hometeam,1E,0,0,0,0,0
+43,Round of 16,02/07/2024 17:00,Fußball Arena München,NA,awayteam,3A/B/C/D,0,0,0,0,0
+44,Round of 16,02/07/2024 20:00,RB Arena,NA,hometeam,1D,0,0,0,0,0
+44,Round of 16,02/07/2024 20:00,RB Arena,NA,awayteam,2F,0,0,0,0,0
+45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,hometeam,To be announced,0,0,0,0,0
+45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,awayteam,To be announced,0,0,0,0,0
+46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,hometeam,To be announced,0,0,0,0,0
+46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,awayteam,To be announced,0,0,0,0,0
+47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,hometeam,To be announced,0,0,0,0,0
+47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,awayteam,To be announced,0,0,0,0,0
+48,Quarter Finals,06/07/2024 20:00,Olympiastadion,NA,hometeam,To be announced,0,0,0,0,0
+48,Quarter Finals,06/07/2024 20:00,Olympiastadion,NA,awayteam,To be announced,0,0,0,0,0
+49,Semi Finals,09/07/2024 20:00,Fußball Arena München,NA,hometeam,To be announced,0,0,0,0,0
+49,Semi Finals,09/07/2024 20:00,Fußball Arena München,NA,awayteam,To be announced,0,0,0,0,0
+50,Semi Finals,10/07/2024 20:00,BVB Stadion Dortmund,NA,hometeam,To be announced,0,0,0,0,0
+50,Semi Finals,10/07/2024 20:00,BVB Stadion Dortmund,NA,awayteam,To be announced,0,0,0,0,0
+51,Final,14/07/2024 20:00,Olympiastadion,NA,hometeam,To be announced,0,0,0,0,0
+51,Final,14/07/2024 20:00,Olympiastadion,NA,awayteam,To be announced,0,0,0,0,0
