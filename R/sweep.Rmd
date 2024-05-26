@@ -20,6 +20,7 @@ library(reactable)
 source(here("R", "league_table.R"))
 
 # seed = round(16.4 * 1224, digits = 0)
+now <- "2024-07-15 20:00"
 groups <- c("Group A",
             "Group B",
             "Group C",
@@ -29,7 +30,7 @@ groups <- c("Group A",
 
 colspec <- cols(
   matchnumber = col_integer(),
-  roundnumber = col_integer(),
+  roundnumber = col_character(),
   date = col_datetime(format = "%d/%m/%Y %H:%M"),
   location = col_character(),
   group = col_character(),
@@ -44,9 +45,9 @@ colspec <- cols(
 
 matchdata <- read_csv(here("data", "matchdata.csv"),col_types = colspec) 
 
-fixtures <- matchdata %>% 
+fixtures <- matchdata |>  
   pivot_wider(names_from = homeaway,
-              values_from = c(team, goals, penalties, ycards, rcards, fouls)) %>% 
+              values_from = c(team, goals, penalties, ycards, rcards, fouls)) |> 
   mutate(points_hometeam = case_when(goals_hometeam > goals_awayteam ~ 3,
                                      goals_hometeam == goals_awayteam ~ 1,
                                      TRUE ~ 0),
@@ -61,7 +62,7 @@ fixtures <- matchdata %>%
                                      TRUE ~ "L"))
 
 
-hometeam <- fixtures %>% 
+hometeam <- fixtures |>  
             select(matchnumber, roundnumber, date, location, group,
                    team = team_hometeam,
                    result = result_hometeam,
@@ -73,7 +74,7 @@ hometeam <- fixtures %>%
                    fouls = fouls_hometeam,
                    points = points_hometeam)
 
-awayteam <- fixtures %>% 
+awayteam <- fixtures |>  
   select(matchnumber, roundnumber, date, location, group,
          team = team_awayteam,
          result = result_awayteam,
@@ -85,8 +86,9 @@ awayteam <- fixtures %>%
          fouls = fouls_awayteam,
          points = points_awayteam)
 
-matchdata_full <- hometeam %>% 
-           bind_rows(awayteam)
+matchdata_full <- hometeam |>  
+           bind_rows(awayteam) |> 
+  filter(date <= now)
 
 ```
 
@@ -94,14 +96,14 @@ Welcome to the FCAT Euro 2024 Sweep! Your chance to add a little spice to your
 summer and maybe win a valuable Cash Prize! As usual there are a range of
 prizes available to maximise the chances of prolonging your interest.
 
-- **Winner** receives £14
-- **Runner up** gets £6
+- **Winner** receives £10
+- **Runner up** gets £5
 
-In addition there are some bonus categories with a value of £4 each:
+In addition there are some bonus categories with a value of £3 each:
 
 - **Wooden Spoon** for the worst team in the tournament based on results
 - **Entertainers** for the team involved in the most goals
-- **Thugs** for the dirtiest team
+- **Anti-footballers** for the dirtiest team
 
 All statistics will be drawn from the official
 [Euro 2024](https://www.uefa.com/euro2024/) website. The organisers reserve
@@ -124,7 +126,7 @@ Code to reproduce the draw is available
 
 names <- c("Person 1", "Person 2", "Person 3", "Person 4",
            "Person 5", "Person 6", "Person 7", "Person 8", 
-           "Person 9", "Person 10", "Person 11", "Perteson 12", 
+           "Person 9", "Person 10", "Person 11", "Person 12", 
            "Person 13", "Person 14", "Person 15", "Person 16",
            "Person 17", "Person 18", "Person 19", "Person 20",
            "Person 21", "Person 22", "Person 23", "Person 24")  
@@ -137,12 +139,102 @@ countries <- c("Albania","Austria","Belgium","Croatia",
                "Spain","Switzerland","Türkiye","Ukraine")
 
 # set.seed(seed)
-draw <- tibble(country = sample(countries), name = names) %>% 
+draw <- tibble(country = sample(countries), name = names) |>  
   arrange(country)
 
 knitr::kable(draw)
 
 ```
+
+
+## The Tournament {.tabset}
+
+Match data as at **`r Sys.time()`**. 
+
+### Fixtures
+
+Use the fixture list to a) to ensure you never miss a match on TV, or b)
+schedule some Married At First Sight: Australia binge sessions.
+
+```{r fixtures}
+
+fixtures |> 
+  mutate(fixture = ifelse(is.na(goals_hometeam),
+                          paste(team_hometeam, "v", team_awayteam),
+                          paste(team_hometeam, goals_hometeam, "-", goals_awayteam, team_awayteam)
+                          )
+         ) |> 
+  select(matchnumber, date, fixture, location, group, roundnumber) |> 
+  reactable(pagination = FALSE,
+            compact = TRUE,
+            resizable = TRUE,
+            filterable = TRUE,
+            columns = list(
+            matchnumber = colDef(name = "Match #"),
+            date = colDef(name = "Date", format = colFormat(datetime = TRUE)),
+            fixture = colDef(name = "Fixture"),
+            location = colDef(name = "Venue"),
+            group = colDef(name= "Group"),
+            roundnumber = colDef(name = "Round"))
+            )
+
+```
+
+### Group standings 
+
+
+```{r groups, echo=FALSE, message=FALSE, results='asis', warning=FALSE}
+
+# league_table <- function(groupname) {
+# matchdata_full |> 
+#   na.omit() |> 
+#   filter(group == groupname) |>
+#   group_by(team) |> 
+#   summarise(played = n(),
+#             goals_for = sum(goals_for),
+#             goals_against = sum(goals_against),
+#             goals_sum = sum(goals_for) + sum(goals_against),
+#             goal_diff = sum(goals_for) - sum(goals_against),
+#             ycards = sum(ycards),
+#             rcards = sum(rcards),
+#             fouls = sum(fouls),
+#             thug_index = ((rcards * 25) + (ycards *5) + fouls) / played,
+#             pts = sum(points)) |> 
+#   # pivot_wider(names_from = result, values_from = played, values_fill = 0) |>
+#   # relocate(starts_with(c("W", "L", "D")), .after = team) |>
+#   arrange(-pts, -goal_diff) |>  
+#     knitr::kable(caption = paste0("**",groupname,"**"))
+# }
+
+map(groups, league_table, data = matchdata_full)
+
+```
+
+### Team data
+
+```{r overall}
+
+matchdata_full |> 
+  # na.omit() |> 
+  filter(!is.na(goals_for)) |> 
+  group_by(team) |> 
+  summarise(played = n(),
+            goals_for = sum(goals_for),
+            goals_against = sum(goals_against),
+            goals_sum = sum(goals_for) + sum(goals_against),
+            goal_diff = sum(goals_for) - sum(goals_against),
+            ycards = sum(ycards),
+            rcards = sum(rcards),
+            fouls = sum(fouls),
+            pts = sum(points)) |> 
+  arrange(-pts, -goal_diff) |> 
+  reactable(pagination = FALSE,
+            compact = TRUE)
+
+
+
+```
+
 
 ## The Prizes {.tabset .tabset-pills}
 
@@ -153,18 +245,18 @@ conceded, in that sort order.
 
 ```{r wooden-spoon, echo=FALSE}
 
-matchdata_full %>% 
-  # na.omit() %>% 
-  filter(!is.na(goals_for)) %>% 
-  # filter(group %in% groups) %>%
-  group_by(team) %>% 
+matchdata_full |> 
+  # na.omit() |> 
+  filter(!is.na(goals_for)) |> 
+  # filter(group %in% groups) |>
+  group_by(team) |> 
   summarise(played = n(),
             goals_for = sum(goals_for),
             goals_against = sum(goals_against),
             goals_sum = sum(goals_for) + sum(goals_against),
             goal_diff = sum(goals_for) - sum(goals_against),
-            pts = sum(points)) %>% 
-  arrange(pts, goal_diff, desc(goals_against)) %>% 
+            pts = sum(points)) |> 
+  arrange(pts, goal_diff, desc(goals_against)) |> 
   reactable(pagination = TRUE,
             compact = TRUE,
             columns = list(
@@ -187,17 +279,17 @@ see some buccaneering all out attacking football).
 
 ``` {r entertainers, echo=FALSE}
 
-matchdata_full %>% 
-  # na.omit() %>% 
-  filter(!is.na(goals_for)) %>% 
-  group_by(team) %>% 
+matchdata_full |> 
+  # na.omit() |> 
+  filter(!is.na(goals_for)) |> 
+  group_by(team) |> 
   summarise(played = n(),
             goals_for = sum(goals_for),
             goals_against = sum(goals_against),
             goals_sum = sum(goals_for) + sum(goals_against),
             goal_diff = sum(goals_for) - sum(goals_against),
-            entertain_index = (goals_sum / played) + (goals_for / played)) %>% 
-  arrange(-entertain_index, -goals_for) %>% 
+            entertain_index = (goals_sum / played) + (goals_for / played)) |> 
+  arrange(-entertain_index, -goals_for) |> 
   reactable(pagination = TRUE, 
             compact = TRUE,
             columns = list(
@@ -215,7 +307,7 @@ matchdata_full %>%
 ```
 
 
-### Thugs
+### Anti-footballers
 
 The 'thug index' is calculated as follows: a red card is 25pts, a yellow 5pts
 and a foul 1. These weights are applied to the match data and divided by the
@@ -223,16 +315,16 @@ number of matches played.
 
 ```{r thugs, echo=FALSE}
 
-matchdata_full %>% 
-  # na.omit() %>% 
-  filter(!is.na(goals_for)) %>% 
-  group_by(team) %>% 
+matchdata_full |> 
+  # na.omit() |> 
+  filter(!is.na(goals_for)) |> 
+  group_by(team) |> 
   summarise(played = n(),
             ycards = sum(ycards),
             rcards = sum(rcards),
             fouls = sum(fouls),
-            thug_index = ((rcards * 25) + (ycards *5) + fouls) / played) %>% 
-  arrange(-thug_index) %>% 
+            thug_index = ((rcards * 25) + (ycards *5) + fouls) / played) |> 
+  arrange(-thug_index) |> 
   reactable(pagination = TRUE,
             compact = TRUE,
             columns = list(
@@ -246,84 +338,6 @@ matchdata_full %>%
 
 ```
 
-## The tournament {.tabset}
-
-### Group stages 
-
-
-```{r groups, echo=FALSE, message=FALSE, results='asis', warning=FALSE}
-
-# league_table <- function(groupname) {
-# matchdata_full %>% 
-#   na.omit() %>% 
-#   filter(group == groupname) %>%
-#   group_by(team) %>% 
-#   summarise(played = n(),
-#             goals_for = sum(goals_for),
-#             goals_against = sum(goals_against),
-#             goals_sum = sum(goals_for) + sum(goals_against),
-#             goal_diff = sum(goals_for) - sum(goals_against),
-#             ycards = sum(ycards),
-#             rcards = sum(rcards),
-#             fouls = sum(fouls),
-#             thug_index = ((rcards * 25) + (ycards *5) + fouls) / played,
-#             pts = sum(points)) %>% 
-#   # pivot_wider(names_from = result, values_from = played, values_fill = 0) %>%
-#   # relocate(starts_with(c("W", "L", "D")), .after = team) %>%
-#   arrange(-pts, -goal_diff) %>%  
-#     knitr::kable(caption = paste0("**",groupname,"**"))
-# }
-
-map(groups, league_table, data = matchdata_full)
-
-```
-
-### Overall standings
-
-```{r overall}
-
-matchdata_full %>% 
-  # na.omit() %>% 
-  filter(!is.na(goals_for)) %>% 
-  group_by(team) %>% 
-  summarise(played = n(),
-            goals_for = sum(goals_for),
-            goals_against = sum(goals_against),
-            goals_sum = sum(goals_for) + sum(goals_against),
-            goal_diff = sum(goals_for) - sum(goals_against),
-            ycards = sum(ycards),
-            rcards = sum(rcards),
-            fouls = sum(fouls),
-            pts = sum(points)) %>% 
-  arrange(-pts, -goal_diff) %>% 
-  reactable(pagination = FALSE,
-            compact = TRUE)
-
-
-
-```
-
-### Fixtures
-```{r fixtures}
-
-fixtures %>% 
-  mutate(fixture = ifelse(is.na(goals_hometeam),
-                          paste(team_hometeam, "v", team_awayteam),
-                          paste(team_hometeam, goals_hometeam, "-", goals_awayteam, team_awayteam)
-                          )
-         ) %>% 
-  select(matchnumber, date, fixture, location, group, roundnumber) %>% 
-  reactable(pagination = FALSE,
-            compact = TRUE,
-            resizable = TRUE,
-            filterable = TRUE,
-            columns = list(
-            matchnumber = colDef(name = "#"),
-            roundnumber = colDef(name = "Round"))
-            )
-
-```
-
 
 ## Payment status
 
@@ -332,7 +346,7 @@ Please correct me if there are any errors.
 
 ```{r payment}
 
-# payment %>% arrange(Name, desc(Paid)) %>% knitr::kable()
+# payment |> arrange(Name, desc(Paid)) |> knitr::kable()
 
 
 ```
@@ -343,7 +357,7 @@ Please correct me if there are any errors.
 
 - **Winner** - TBD
 - **Runner up** - TBD
-- **Wooden Spoon** - TBD - congratulations **`r draw %>% filter(country == "Qatar") %>% pull(name = )`!**
+- **Wooden Spoon** - TBD - congratulations **`r draw |> filter(country == "Qatar") |> pull(name = )`!**
 - **Entertainers** - TBD
-- **Thugs** - TBD
+- **Anti-footballers** - TBD
 

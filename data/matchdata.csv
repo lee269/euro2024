@@ -87,17 +87,17 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 43,Round of 16,02/07/2024 17:00,Fußball Arena München,NA,awayteam,3A/B/C/D,0,0,0,0,0
 44,Round of 16,02/07/2024 20:00,RB Arena,NA,hometeam,1D,0,0,0,0,0
 44,Round of 16,02/07/2024 20:00,RB Arena,NA,awayteam,2F,0,0,0,0,0
-45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,hometeam,To be announced,0,0,0,0,0
-45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,awayteam,To be announced,0,0,0,0,0
-46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,hometeam,To be announced,0,0,0,0,0
-46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,awayteam,To be announced,0,0,0,0,0
-47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,hometeam,To be announced,0,0,0,0,0
-47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,awayteam,To be announced,0,0,0,0,0
-48,Quarter Finals,06/07/2024 20:00,Olympiastadion,NA,hometeam,To be announced,0,0,0,0,0
-48,Quarter Finals,06/07/2024 20:00,Olympiastadion,NA,awayteam,To be announced,0,0,0,0,0
-49,Semi Finals,09/07/2024 20:00,Fußball Arena München,NA,hometeam,To be announced,0,0,0,0,0
-49,Semi Finals,09/07/2024 20:00,Fußball Arena München,NA,awayteam,To be announced,0,0,0,0,0
-50,Semi Finals,10/07/2024 20:00,BVB Stadion Dortmund,NA,hometeam,To be announced,0,0,0,0,0
-50,Semi Finals,10/07/2024 20:00,BVB Stadion Dortmund,NA,awayteam,To be announced,0,0,0,0,0
-51,Final,14/07/2024 20:00,Olympiastadion,NA,hometeam,To be announced,0,0,0,0,0
-51,Final,14/07/2024 20:00,Olympiastadion,NA,awayteam,To be announced,0,0,0,0,0
+45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,hometeam,W39,0,0,0,0,0
+45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,awayteam,W37,0,0,0,0,0
+46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,hometeam,W41,0,0,0,0,0
+46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,awayteam,W42,0,0,0,0,0
+47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,hometeam,W40,0,0,0,0,0
+47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,awayteam,W38,0,0,0,0,0
+48,Quarter Finals,06/07/2024 20:00,Olympiastadion,NA,hometeam,W43,0,0,0,0,0
+48,Quarter Finals,06/07/2024 20:00,Olympiastadion,NA,awayteam,W44,0,0,0,0,0
+49,Semi Finals,09/07/2024 20:00,Fußball Arena München,NA,hometeam,W45,0,0,0,0,0
+49,Semi Finals,09/07/2024 20:00,Fußball Arena München,NA,awayteam,W46,0,0,0,0,0
+50,Semi Finals,10/07/2024 20:00,BVB Stadion Dortmund,NA,hometeam,W47,0,0,0,0,0
+50,Semi Finals,10/07/2024 20:00,BVB Stadion Dortmund,NA,awayteam,W48,0,0,0,0,0
+51,Final,14/07/2024 20:00,Olympiastadion,NA,hometeam,W49,0,0,0,0,0
+51,Final,14/07/2024 20:00,Olympiastadion,NA,awayteam,W50,0,0,0,0,0
