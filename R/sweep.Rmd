@@ -19,6 +19,10 @@ library(reactable)
 
 source(here("R", "league_table.R"))
 
+
+# check this out for possible github pages action
+# https://bookdown.org/yihui/rmarkdown-cookbook/custom-knit.html
+
 # seed = round(16.4 * 1224, digits = 0)
 now <- "2024-07-15 20:00"
 groups <- c("Group A",
@@ -185,27 +189,6 @@ fixtures |>
 
 ```{r groups, echo=FALSE, message=FALSE, results='asis', warning=FALSE}
 
-# league_table <- function(groupname) {
-# matchdata_full |> 
-#   na.omit() |> 
-#   filter(group == groupname) |>
-#   group_by(team) |> 
-#   summarise(played = n(),
-#             goals_for = sum(goals_for),
-#             goals_against = sum(goals_against),
-#             goals_sum = sum(goals_for) + sum(goals_against),
-#             goal_diff = sum(goals_for) - sum(goals_against),
-#             ycards = sum(ycards),
-#             rcards = sum(rcards),
-#             fouls = sum(fouls),
-#             thug_index = ((rcards * 25) + (ycards *5) + fouls) / played,
-#             pts = sum(points)) |> 
-#   # pivot_wider(names_from = result, values_from = played, values_fill = 0) |>
-#   # relocate(starts_with(c("W", "L", "D")), .after = team) |>
-#   arrange(-pts, -goal_diff) |>  
-#     knitr::kable(caption = paste0("**",groupname,"**"))
-# }
-
 map(groups, league_table, data = matchdata_full)
 
 ```
@@ -229,7 +212,19 @@ matchdata_full |>
             pts = sum(points)) |> 
   arrange(-pts, -goal_diff) |> 
   reactable(pagination = FALSE,
-            compact = TRUE)
+            compact = TRUE,
+            columns = list(
+              team = colDef(name = "Team"),
+              played = colDef(name = "Played"),
+              goals_for = colDef(name = "Goals for"),
+              goals_against = colDef(name = "Goals against"),
+              goals_sum = colDef(name = "Total goals"),
+              goal_diff = colDef(name = "Goal difference"),
+              ycards = colDef(name = "Yellow cards"),
+              rcards = colDef(name = "Red cards"),
+              fouls = colDef(name = "Fouls"),
+              pts = colDef(name = "Points")
+            ))
 
 
 
