@@ -4,6 +4,14 @@ output:
   html_document:
     toc: TRUE
     toc_float: TRUE
+knit: |
+  (function(input, ...) {
+    rmarkdown::render(
+      input,
+      output_file = here::here("docs", "index.html"),
+      envir = globalenv()
+    )
+  })
 ---
 
 ```{r setup, include=FALSE}
@@ -24,7 +32,7 @@ source(here("R", "league_table.R"))
 # https://bookdown.org/yihui/rmarkdown-cookbook/custom-knit.html
 
 # seed = round(16.4 * 1224, digits = 0)
-now <- "2024-07-15 20:00"
+now <- "2024-07-14 22:00"
 groups <- c("Group A",
             "Group B",
             "Group C",
@@ -109,6 +117,8 @@ In addition there are some bonus categories with a value of £3 each:
 - **Entertainers** for the team involved in the most goals
 - **Anti-footballers** for the dirtiest team
 
+### The small print
+
 All statistics will be drawn from the official
 [Euro 2024](https://www.uefa.com/euro2024/) website. The organisers reserve
 the right to tweak the criteria for the bonus categories, to break ties or
@@ -189,7 +199,9 @@ fixtures |>
 
 ```{r groups, echo=FALSE, message=FALSE, results='asis', warning=FALSE}
 
-map(groups, league_table, data = matchdata_full)
+x <- map(groups, league_table, data = matchdata_full)
+
+cat(unlist(x), sep = "\n")
 
 ```
 
