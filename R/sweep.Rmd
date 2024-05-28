@@ -125,20 +125,33 @@ the right to tweak the criteria for the bonus categories, to break ties or
 generally to keep it sensible. As always in case of questions over the rules,
 the organisers decision is _final_.
 
-## The Draw
+## The contestants
 
-The draw has been conducted in a rigorously reproducible manner, seeded with a
-random number. 
+Here is who is in the pot so far:
 
-Code to reproduce the draw is available
-[here](https://github.com/lee269/euro2024).
-
-
-```{r sweep, echo=FALSE, message=FALSE}
+```{r}
 
 names <- c("David Lee", "Maria Prokopiou", "Nikita Driver", "Michael Archer",
             "Simon Dixon", "Huw Evans", "Elsa Richmond-Seaton", "Alessandro Cahill",
             "Matt Ensor", "Isabella Worth", "Matt Keating")
+
+knitr::kable(tibble(Name = names), row.names = TRUE)
+
+```
+
+
+
+
+```{r sweep, echo=FALSE, message=FALSE, results='hide'}
+
+## The Draw
+
+# The draw has been conducted in a rigorously reproducible manner, seeded with a
+# random number. 
+# 
+# Code to reproduce the draw is available
+# [here](https://github.com/lee269/euro2024).
+
 
 names <- c("Person 1", "Person 2", "Person 3", "Person 4",
            "Person 5", "Person 6", "Person 7", "Person 8", 
@@ -165,7 +178,7 @@ knitr::kable(draw)
 
 ## The Tournament {.tabset}
 
-Match data as at **`r Sys.time()`**. 
+Match data updated at **`r format(Sys.time(), "%d %b %Y %H:%M")`**. 
 
 ### Fixtures
 
@@ -198,6 +211,8 @@ fixtures |>
 
 ### Group standings 
 
+Stuff will appear here once some football has been played.
+
 
 ```{r groups, echo=FALSE, message=FALSE, results='asis', warning=FALSE}
 
@@ -208,6 +223,9 @@ cat(unlist(x), sep = "\n")
 ```
 
 ### Team data
+
+Stuff will appear here once some football has been played.
+
 
 ```{r overall}
 
@@ -348,25 +366,28 @@ matchdata_full |>
 ```
 
 
-## Payment status
-
-Here is the entrants list and payment status. Thanks for your contribution!.
-Please correct me if there are any errors.
 
 ```{r payment}
+
+## Payment status
+
+# Here is the entrants list and payment status. Thanks for your contribution!.
+# Please correct me if there are any errors.
+
 
 # payment |> arrange(Name, desc(Paid)) |> knitr::kable()
 
 
-```
+
 
 
 ## The Winners!
 
 
-- **Winner** - TBD
-- **Runner up** - TBD
-- **Wooden Spoon** - TBD - congratulations **`r draw |> filter(country == "Qatar") |> pull(name = )`!**
-- **Entertainers** - TBD
-- **Anti-footballers** - TBD
+# - **Winner** - TBD
+# - **Runner up** - TBD
+# - **Wooden Spoon** - TBD - congratulations **`r draw |> filter(country == "Qatar") |> pull(name = )`!**
+# - **Entertainers** - TBD
+# - **Anti-footballers** - TBD
 
+```
