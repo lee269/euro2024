@@ -32,7 +32,7 @@ source(here("R", "league_table.R"))
 # https://bookdown.org/yihui/rmarkdown-cookbook/custom-knit.html
 
 # seed = round(16.4 * 1224, digits = 0)
-now <- "2024-07-14 22:00"
+now <- Sys.time()
 groups <- c("Group A",
             "Group B",
             "Group C",
