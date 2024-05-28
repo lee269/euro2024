@@ -136,7 +136,9 @@ Code to reproduce the draw is available
 
 ```{r sweep, echo=FALSE, message=FALSE}
 
-
+names <- c("David Lee", "Maria Prokopiou", "Nikita Driver", "Michael Archer",
+            "Simon Dixon", "Huw Evans", "Elsa Richmond-Seaton", "Alessandro Cahill",
+            "Matt Ensor", "Isabella Worth")
 
 names <- c("Person 1", "Person 2", "Person 3", "Person 4",
            "Person 5", "Person 6", "Person 7", "Person 8", 
