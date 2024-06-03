@@ -135,7 +135,7 @@ names <- c("David Lee", "Maria Prokopiou", "Nikita Driver", "Michael Archer",
             "Simon Dixon", "Huw Evans", "Elsa Richmond-Seaton", "Alessandro Cahill",
             "Matt Ensor", "Isabella Worth", "Matt Keating", "Joe Lawley",
            "Alexis Rampa", "Courtney Keane", "John Walsh", "Carine Valarche",
-           "Ian Lonsdale")
+           "Ian Lonsdale", "Chris Silwood")
 
 knitr::kable(tibble(Name = names), row.names = TRUE)
 
