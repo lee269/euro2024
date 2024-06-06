@@ -129,16 +129,18 @@ the organisers decision is _final_.
 
 Here is who is in the pot so far:
 
-```{r}
+```{r contestants, message=FALSE, warning=FALSE}
 
 names <- c("David Lee", "Maria Prokopiou", "Nikita Driver", "Michael Archer",
             "Simon Dixon", "Huw Evans", "Elsa Richmond-Seaton", "Alessandro Cahill",
             "Matt Ensor", "Isabella Worth", "Matt Keating", "Joe Lawley",
            "Alexis Rampa", "Courtney Keane", "John Walsh", "Carine Valarche",
            "Ian Lonsdale", "Chris Silwood", "Leigh Riley", "Rachel Latham",
-           "Helen Hoult", "Shakti Shah", "Sarath Kizhakkoott")
+           "Helen Hoult", "Shakti Shah", "Sarath Kizhakkoott", "Lisa Lee")
 
-knitr::kable(tibble(Name = names), row.names = TRUE)
+contestants <- read_csv(here("data", "contestants.csv"))
+
+knitr::kable(contestants)
 
 ```
 
