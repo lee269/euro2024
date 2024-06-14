@@ -127,7 +127,7 @@ the organisers decision is _final_.
 
 ## The contestants
 
-Here is who is in the pot so far:
+Here are the results of the draw:
 
 ```{r contestants, message=FALSE, warning=FALSE}
 
