@@ -11,8 +11,8 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 5,1,16/06/2024 14:00,Volksparkstadion,Group D,awayteam,Netherlands,2,0,1,0,8
 6,1,16/06/2024 17:00,Arena Stuttgart,Group C,hometeam,Slovenia,1,0,2,0,12
 6,1,16/06/2024 17:00,Arena Stuttgart,Group C,awayteam,Denmark,1,0,1,0,9
-7,1,16/06/2024 20:00,Arena AufSchalke,Group C,hometeam,Serbia,0,0,0,0,0
-7,1,16/06/2024 20:00,Arena AufSchalke,Group C,awayteam,England,0,0,0,0,0
+7,1,16/06/2024 20:00,Arena AufSchalke,Group C,hometeam,Serbia,0,0,3,0,19
+7,1,16/06/2024 20:00,Arena AufSchalke,Group C,awayteam,England,1,0,0,0,8
 8,1,17/06/2024 14:00,Fußball Arena München,Group E,hometeam,Romania,0,0,0,0,0
 8,1,17/06/2024 14:00,Fußball Arena München,Group E,awayteam,Ukraine,0,0,0,0,0
 9,1,17/06/2024 17:00,Frankfurt Stadion,Group E,hometeam,Belgium,0,0,0,0,0
