@@ -15,9 +15,9 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 7,1,16/06/2024 20:00,Arena AufSchalke,Group C,awayteam,England,1,0,0,0,8
 8,1,17/06/2024 14:00,Fußball Arena München,Group E,hometeam,Romania,3,0,1,0,9
 8,1,17/06/2024 14:00,Fußball Arena München,Group E,awayteam,Ukraine,0,0,1,0,8
-9,1,17/06/2024 17:00,Frankfurt Stadion,Group E,hometeam,Belgium,0,0,0,0,0
-9,1,17/06/2024 17:00,Frankfurt Stadion,Group E,awayteam,Slovakia,0,0,0,0,0
-10,1,17/06/2024 20:00,Düsseldorf Arena,Group D,hometeam,Austria,0,0,0,0,0
+9,1,17/06/2024 17:00,Frankfurt Stadion,Group E,hometeam,Belgium,0,0,3,0,0
+9,1,17/06/2024 17:00,Frankfurt Stadion,Group E,awayteam,Slovakia,1,0,1,0,14
+10,1,17/06/2024 20:00,Düsseldorf Arena,Group D,hometeam,Austria,0,0,0,0,10
 10,1,17/06/2024 20:00,Düsseldorf Arena,Group D,awayteam,France,0,0,0,0,0
 11,1,18/06/2024 17:00,BVB Stadion Dortmund,Group F,hometeam,Türkiye,0,0,0,0,0
 11,1,18/06/2024 17:00,BVB Stadion Dortmund,Group F,awayteam,Georgia,0,0,0,0,0
