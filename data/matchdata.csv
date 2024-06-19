@@ -23,10 +23,10 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 11,1,18/06/2024 17:00,BVB Stadion Dortmund,Group F,awayteam,Georgia,1,0,1,0,7
 12,1,18/06/2024 20:00,RB Arena,Group F,hometeam,Portugal,2,0,2,0,6
 12,1,18/06/2024 20:00,RB Arena,Group F,awayteam,Czechia,1,0,1,0,9
-13,2,19/06/2024 14:00,Volksparkstadion,Group B,hometeam,Croatia,0,0,0,0,0
-13,2,19/06/2024 14:00,Volksparkstadion,Group B,awayteam,Albania,0,0,0,0,0
-14,2,19/06/2024 17:00,Arena Stuttgart,Group A,hometeam,Germany,0,0,0,0,0
-14,2,19/06/2024 17:00,Arena Stuttgart,Group A,awayteam,Hungary,0,0,0,0,0
+13,2,19/06/2024 14:00,Volksparkstadion,Group B,hometeam,Croatia,2,0,1,0,15
+13,2,19/06/2024 14:00,Volksparkstadion,Group B,awayteam,Albania,2,0,3,0,11
+14,2,19/06/2024 17:00,Arena Stuttgart,Group A,hometeam,Germany,2,0,2,0,12
+14,2,19/06/2024 17:00,Arena Stuttgart,Group A,awayteam,Hungary,0,0,2,0,10
 15,2,19/06/2024 20:00,Stadion Köln,Group A,hometeam,Scotland,0,0,0,0,0
 15,2,19/06/2024 20:00,Stadion Köln,Group A,awayteam,Switzerland,0,0,0,0,0
 16,2,20/06/2024 14:00,Fußball Arena München,Group C,hometeam,Slovenia,0,0,0,0,0
