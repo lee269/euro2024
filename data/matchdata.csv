@@ -29,10 +29,10 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 14,2,19/06/2024 17:00,Arena Stuttgart,Group A,awayteam,Hungary,0,0,2,0,10
 15,2,19/06/2024 20:00,Stadion Köln,Group A,hometeam,Scotland,1,0,3,0,11
 15,2,19/06/2024 20:00,Stadion Köln,Group A,awayteam,Switzerland,1,0,2,0,11
-16,2,20/06/2024 14:00,Fußball Arena München,Group C,hometeam,Slovenia,0,0,0,0,0
-16,2,20/06/2024 14:00,Fußball Arena München,Group C,awayteam,Serbia,0,0,0,0,0
-17,2,20/06/2024 17:00,Frankfurt Stadion,Group C,hometeam,Denmark,0,0,0,0,0
-17,2,20/06/2024 17:00,Frankfurt Stadion,Group C,awayteam,England,0,0,0,0,0
+16,2,20/06/2024 14:00,Fußball Arena München,Group C,hometeam,Slovenia,1,0,2,0,13
+16,2,20/06/2024 14:00,Fußball Arena München,Group C,awayteam,Serbia,1,0,4,0,8
+17,2,20/06/2024 17:00,Frankfurt Stadion,Group C,hometeam,Denmark,1,0,3,0,13
+17,2,20/06/2024 17:00,Frankfurt Stadion,Group C,awayteam,England,1,0,1,0,5
 18,2,20/06/2024 20:00,Arena AufSchalke,Group B,hometeam,Spain,0,0,0,0,0
 18,2,20/06/2024 20:00,Arena AufSchalke,Group B,awayteam,Italy,0,0,0,0,0
 19,2,21/06/2024 14:00,Düsseldorf Arena,Group E,hometeam,Slovakia,0,0,0,0,0
