@@ -39,8 +39,8 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 19,2,21/06/2024 14:00,Düsseldorf Arena,Group E,awayteam,Ukraine,2,0,1,0,12
 20,2,21/06/2024 17:00,Olympiastadion,Group D,hometeam,Poland,1,0,4,0,15
 20,2,21/06/2024 17:00,Olympiastadion,Group D,awayteam,Austria,3,0,2,0,15
-21,2,21/06/2024 20:00,RB Arena,Group D,hometeam,Netherlands,0,0,0,0,0
-21,2,21/06/2024 20:00,RB Arena,Group D,awayteam,France,0,0,0,0,0
+21,2,21/06/2024 20:00,RB Arena,Group D,hometeam,Netherlands,0,0,1,0,13
+21,2,21/06/2024 20:00,RB Arena,Group D,awayteam,France,0,0,0,0,8
 22,2,22/06/2024 14:00,Volksparkstadion,Group F,hometeam,Georgia,0,0,0,0,0
 22,2,22/06/2024 14:00,Volksparkstadion,Group F,awayteam,Czechia,0,0,0,0,0
 23,2,22/06/2024 17:00,BVB Stadion Dortmund,Group F,hometeam,Türkiye,0,0,0,0,0
