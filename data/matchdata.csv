@@ -43,10 +43,10 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 21,2,21/06/2024 20:00,RB Arena,Group D,awayteam,France,0,0,0,0,8
 22,2,22/06/2024 14:00,Volksparkstadion,Group F,hometeam,Georgia,1,0,4,0,11
 22,2,22/06/2024 14:00,Volksparkstadion,Group F,awayteam,Czechia,1,0,5,0,17
-23,2,22/06/2024 17:00,BVB Stadion Dortmund,Group F,hometeam,Türkiye,0,0,0,0,0
-23,2,22/06/2024 17:00,BVB Stadion Dortmund,Group F,awayteam,Portugal,0,0,0,0,0
-24,2,22/06/2024 20:00,Stadion Köln,Group E,hometeam,Belgium,0,0,0,0,0
-24,2,22/06/2024 20:00,Stadion Köln,Group E,awayteam,Romania,0,0,0,0,0
+23,2,22/06/2024 17:00,BVB Stadion Dortmund,Group F,hometeam,Türkiye,0,0,3,0,16
+23,2,22/06/2024 17:00,BVB Stadion Dortmund,Group F,awayteam,Portugal,3,0,2,0,8
+24,2,22/06/2024 20:00,Stadion Köln,Group E,hometeam,Belgium,2,0,1,0,9
+24,2,22/06/2024 20:00,Stadion Köln,Group E,awayteam,Romania,0,0,2,0,11
 25,3,23/06/2024 20:00,Frankfurt Stadion,Group A,hometeam,Switzerland,0,0,0,0,0
 25,3,23/06/2024 20:00,Frankfurt Stadion,Group A,awayteam,Germany,0,0,0,0,0
 26,3,23/06/2024 20:00,Arena Stuttgart,Group A,hometeam,Scotland,0,0,0,0,0
