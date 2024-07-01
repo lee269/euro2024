@@ -79,8 +79,8 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 39,Round of 16,30/06/2024 17:00,Arena AufSchalke,NA,awayteam,Slovakia,1,0,6,0,19
 40,Round of 16,30/06/2024 20:00,Stadion Köln,NA,hometeam,Spain,4,0,1,0,11
 40,Round of 16,30/06/2024 20:00,Stadion Köln,NA,awayteam,Georgia,1,0,1,0,5
-41,Round of 16,01/07/2024 17:00,Düsseldorf Arena,NA,hometeam,France,0,0,0,0,0
-41,Round of 16,01/07/2024 17:00,Düsseldorf Arena,NA,awayteam,Belgium,0,0,0,0,0
+41,Round of 16,01/07/2024 17:00,Düsseldorf Arena,NA,hometeam,France,1,0,3,0,7
+41,Round of 16,01/07/2024 17:00,Düsseldorf Arena,NA,awayteam,Belgium,0,0,3,0,10
 42,Round of 16,01/07/2024 20:00,Frankfurt Stadion,NA,hometeam,Portugal,0,0,0,0,0
 42,Round of 16,01/07/2024 20:00,Frankfurt Stadion,NA,awayteam,Slovenia,0,0,0,0,0
 43,Round of 16,02/07/2024 17:00,Fußball Arena München,NA,hometeam,Romania,0,0,0,0,0
@@ -89,7 +89,7 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 44,Round of 16,02/07/2024 20:00,RB Arena,NA,awayteam,Türkiye,0,0,0,0,0
 45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,hometeam,Spain,0,0,0,0,0
 45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,awayteam,Germany,0,0,0,0,0
-46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,hometeam,W41,0,0,0,0,0
+46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,hometeam,France,0,0,0,0,0
 46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,awayteam,W42,0,0,0,0,0
 47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,hometeam,England,0,0,0,0,0
 47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,awayteam,Switzerland,0,0,0,0,0
