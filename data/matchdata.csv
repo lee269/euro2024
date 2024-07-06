@@ -89,14 +89,14 @@ matchnumber,roundnumber,date,location,group,homeaway,team,goals,penalties,ycards
 44,Round of 16,02/07/2024 20:00,RB Arena,NA,awayteam,Türkiye,2,0,2,0,5
 45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,hometeam,Spain,2,0,8,1,16
 45,Quarter Finals,05/07/2024 17:00,Arena Stuttgart,NA,awayteam,Germany,1,0,8,0,22
-46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,hometeam,France,0,0,0,0,0
-46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,awayteam,Portugal,0,0,0,0,0
+46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,hometeam,Portugal,0,3,1,0,8
+46,Quarter Finals,05/07/2024 20:00,Volksparkstadion,NA,awayteam,France,0,5,1,0,13
 47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,hometeam,England,0,0,0,0,0
 47,Quarter Finals,06/07/2024 17:00,Düsseldorf Arena,NA,awayteam,Switzerland,0,0,0,0,0
 48,Quarter Finals,06/07/2024 20:00,Olympiastadion,NA,hometeam,Netherlands,0,0,0,0,0
 48,Quarter Finals,06/07/2024 20:00,Olympiastadion,NA,awayteam,Türkiye,0,0,0,0,0
 49,Semi Finals,09/07/2024 20:00,Fußball Arena München,NA,hometeam,Spain,0,0,0,0,0
-49,Semi Finals,09/07/2024 20:00,Fußball Arena München,NA,awayteam,W46,0,0,0,0,0
+49,Semi Finals,09/07/2024 20:00,Fußball Arena München,NA,awayteam,France,0,0,0,0,0
 50,Semi Finals,10/07/2024 20:00,BVB Stadion Dortmund,NA,hometeam,W47,0,0,0,0,0
 50,Semi Finals,10/07/2024 20:00,BVB Stadion Dortmund,NA,awayteam,W48,0,0,0,0,0
 51,Final,14/07/2024 20:00,Olympiastadion,NA,hometeam,W49,0,0,0,0,0
